@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete Responsive Food Website Design Tutorial</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html" class="logo">
+        <img src="./images/icon/logo.inline.svg" />
+      </a>
+      <nav class="navbar">
+        <a href="./index.html">首頁</a>
+        <a href="./brand.html">品牌總覽</a>
+        <a href="./blog.html">部落格</a>
+        <a href="./about.html">關於我們</a>
+        <a class="active" href="./problem.html">常見問題</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <a
+          href="https://inline.app/order/-MNSCuB86DeW7ngZobf9:inline-live-2?language=zh-tw"
+          target="_blank"
+          style="color: #fff"
+        >
+          <div class="order-btn">立即點餐</div>
+        </a>
+      </div>
+    </header>
+    <section class="problem">
+      <div class="banner"></div>
+      <div class="heading">
+        <h1>常見問題</h1>
+        <div class="title-dot">
+          <div class="dots"></div>
+          <div class="dots"></div>
+          <div class="dots"></div>
+          <div class="dots"></div>
+          <div class="dots"></div>
+        </div>
+      </div>
+      <div class="accordion accordion-flush" id="questions">
+        <!-- Item 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed problem-text"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-one"
+            >
+              1. 請問用餐需要事先訂位嗎？
+            </button>
+          </h2>
+          <div
+            id="question-one"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              為了滿足顧客多方面的需求，並將訂位服務做到最好，我們開放一個月內的訂位，建議您可以直接撥打各分店服務專線，越早預約越有機會選擇您想要的用餐時間喔！各分店預約訂位專線詳見『門市據點一覽表』
+              (特殊節日開放訂位時間會另行公佈)
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed problem-text"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-two"
+            >
+              2.請問過年有營業嗎？
+            </button>
+          </h2>
+          <div
+            id="question-two"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              只有除夕當天的時間會另行發佈於官網，其餘時間都正常營業。
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed problem-text"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-three"
+            >
+              3.請問有附設停車場嗎？
+            </button>
+          </h2>
+          <div
+            id="question-three"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              目前大部分店家都位於百貨或商場內，皆有附設停車場，也建議搭乘大眾交通運輸工具前往。
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed problem-text"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-four"
+            >
+              4. 請問餐廳內有設立吸煙區嗎？
+            </button>
+          </h2>
+          <div
+            id="question-four"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              餐廳皆為開放式空間，未提供吸煙區座位。
+            </div>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed problem-text"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-five"
+            >
+              5. 請問有提供娃娃的座椅嗎？
+            </button>
+          </h2>
+          <div
+            id="question-five"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              都有特別為小朋友準備娃娃專用座椅，如果有需要可向服務人員告知。
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed problem-text"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-six"
+            >
+              6.請問可以攜帶寵物用餐嗎？
+            </button>
+          </h2>
+          <div
+            id="question-six"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              寵物需放置於提籃中，導盲犬可隨同入內用餐，需事先與服務人員告知，以便為您安排適當的座位。
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed problem-text"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-seven"
+            >
+              7.請問消費可以刷卡嗎？
+            </button>
+          </h2>
+          <div
+            id="question-seven"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">各店皆有提供刷卡服務。</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed problem-text"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-eight"
+            >
+              8.內用餐有優惠折扣嗎？
+            </button>
+          </h2>
+          <div
+            id="question-eight"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              可以參考官方網站『訊息專區』我們會不定期推出優惠折扣活動。
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed problem-text"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-nine"
+            >
+              9.內用餐有最低消費嗎？
+            </button>
+          </h2>
+          <div
+            id="question-nine"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              用餐是有最低消費門檻，大人每人最低需消費乙份主餐。
+              本餐廳提供之『兒童餐
+              250元』12歲以下兒童可點，12歲以上低消一份主餐。
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed problem-text"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#question-ten"
+            >
+              10.外帶餐點有優惠折扣嗎？
+            </button>
+          </h2>
+          <div
+            id="question-ten"
+            class="accordion-collapse collapse"
+            data-bs-parent="#questions"
+          >
+            <div class="accordion-body">
+              疫情營間外帶均有八折優惠折扣，鼓勵大家外帶與外送。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="box-container">
+        <div class="box"></div>
+        <div class="box">
+          <div class="box-item">
+            <h3>大安店</h3>
+            <div class="contact-inform">
+              <p><i class="far fa-clock"></i>11 : 00 - 23 : 00</p>
+              <p><i class="fa fa-map-marker-alt"></i>台北市大安區延吉街272號</p>
+              <p><i class="fa fa-phone"></i>02-27552068</p>
+            </div>
+          </div>
+          <div class="box-item">
+            <h3>內湖店</h3>
+            <div class="contact-inform">
+              <p><i class="far fa-clock"></i>11 : 00 - 23 : 00</p>
+              <p><i class="fa fa-map-marker-alt"></i>台北市內湖區洲子街106號</p>
+              <p><i class="fa fa-phone"></i>02-26592068</p>
+            </div>
+          </div>
+          <div class="contact-bar">
+            <a href="./brand.html">品牌總覽</a>|
+            <a href="./blog.html">部落格</a>|
+            <a href="./about.html">關於我們</a>|
+            <a href="./problems.html">常見問題</a>
+          </div>
+          <div class="icon-bar">
+            <div class="icon-item">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="icon-item">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <a
+              href="https://inline.app/order/-MNSCuB86DeW7ngZobf9:inline-live-2?language=zh-tw"
+              target="_blank"
+              style="color: #fff"
+            >
+              <div class="order-btn">立即點餐</div>
+            </a>
+          </div>
+          <span>© 無限廚房 ALL RIGHTS RESERVED</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- loader part  -->
+    <!-- <div class="loader-container">
+    <img src="images/loader.gif" alt="">
+</div> -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

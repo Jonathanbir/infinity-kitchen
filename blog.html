@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete Responsive Food Website Design Tutorial</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts      -->
+
+    <header>
+      <a href="./index.html" class="logo">
+        <img src="./images/icon/logo.inline.svg" />
+      </a>
+
+      <nav class="navbar">
+        <a href="./index.html">首頁</a>
+        <a href="./brand.html">品牌總覽</a>
+        <a class="active" href="./blog.html">部落格</a>
+        <a href="./about.html">關於我們</a>
+        <a href="./problems.html">常見問題</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <a
+          href="https://inline.app/order/-MNSCuB86DeW7ngZobf9:inline-live-2?language=zh-tw"
+          target="_blank"
+          style="color: #fff"
+        >
+          <div class="order-btn">立即點餐</div>
+        </a>
+      </div>
+    </header>
+    <section class="blog-section">
+      <div class="banner"></div>
+      <div class="heading">
+        <h1>部落格</h1>
+        <div class="title-dot">
+          <div class="dots"></div>
+          <div class="dots"></div>
+          <div class="dots"></div>
+          <div class="dots"></div>
+          <div class="dots"></div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="slider-wrapper flex">
+          <div class="slide flex">
+            <div class="slide-image slider-link prev">
+              <img src="./images/blog-1.jpeg" />
+              <div class="overlay"></div>
+            </div>
+            <div class="slide-content">
+              <div class="slide-date">30.07.2010.</div>
+              <div class="slide-title">CHICK-CHICK炸雞餐</div>
+              <div class="slide-text">
+                雞肉的調味滿重的(有丙級廚師證照的媽媽說應該是胡椒)
+                姊姊跟我都不愛這個調味，但爸爸說很好吃😂
+                果然口味這種事就是見仁見智
+                肉也算多汁，不會柴～外皮比胖老爹薄一點點，很脆
+                整塊吃到最後會覺得有一點點鹹
+                不過同樣是外食主義的爸爸又覺得還好了～
+              </div>
+              <div class="slide-more order-btn">查看更多</div>
+            </div>
+          </div>
+          <div class="slide flex">
+            <div class="slide-image slider-link next">
+              <img src="./images/blog-2.jpeg" />
+              <div class="overlay"></div>
+            </div>
+            <div class="slide-content">
+              <div class="slide-date">30.08.2021.</div>
+              <div class="slide-title">True Food 健康餐</div>
+              <div class="slide-text">
+                True Food
+                是專為健身族群打造的健身餐點配送服務網站特別針對不同體型、男女需求，打造不同份量和組成的餐點，男生不怕餓，女生不怕吃不完。
+                菜單也規劃得很細緻，像是為減脂期打造的西西里貓飯、胡麻雞胸低GI塑身餐、增肌減脂醍醐味健身聖品等等，而且菜變化豐富選擇超多，減脂增肌也能吃得超美味～
+              </div>
+              <div class="slide-more order-btn">查看更多</div>
+            </div>
+          </div>
+          <div class="slide flex">
+            <div class="slide-image slider-link next">
+              <img src="./images/blog-3.jpeg" />
+              <div class="overlay"></div>
+            </div>
+            <div class="slide-content">
+              <div class="slide-date">30.09.2021.</div>
+              <div class="slide-title">天天分饗</div>
+              <div class="slide-text">
+                招牌鴨血砂鍋竟然只需要110元！看看這火鍋內浮誇的用料，如果妳是肉食主義者也沒有關係，因為店裡的肉多多鍋也只需要130元，全部200有找。店內的翻桌率極高，妳就知道它到底有多好吃，愛吃麻辣的妳一定要來嚐嚐看！
+              </div>
+              <div class="slide-more order-btn">查看更多</div>
+            </div>
+          </div>
+          <div class="slide flex">
+            <div class="slide-image slider-link next">
+              <img src="./images/blog-4.jpeg" />
+              <div class="overlay"></div>
+            </div>
+            <div class="slide-content">
+              <div class="slide-date">30.10.2021</div>
+              <div class="slide-title">作伙</div>
+              <div class="slide-text">
+                與一般的豬腳不同，這間是用當歸等中藥燉煮的豬腳，可以單吃藥燉豬腳或腿肉，也可以搭配麵線等吃
+                有趣的是它還有天婦羅。很特別的店。可以來這邊吃看看
+              </div>
+              <div class="slide-more order-btn">查看更多</div>
+            </div>
+          </div>
+        </div>
+        <div class="arrows">
+          <a href="#" title="Previous" class="arrow slider-link prev"
+            ><i class="fa fa-chevron-left"></i
+          ></a>
+          <a href="#" title="Next" class="arrow slider-link next"
+            ><i class="fa fa-chevron-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="box-container">
+        <div class="box"></div>
+        <div class="box">
+          <div class="box-item">
+            <h3>大安店</h3>
+            <div class="contact-inform">
+              <p><i class="far fa-clock"></i>11 : 00 - 23 : 00</p>
+              <p><i class="fa fa-map-marker-alt"></i>台北市大安區延吉街272號</p>
+              <p><i class="fa fa-phone"></i>02-27552068</p>
+            </div>
+          </div>
+          <div class="box-item">
+            <h3>內湖店</h3>
+            <div class="contact-inform">
+              <p><i class="far fa-clock"></i>11 : 00 - 23 : 00</p>
+              <p><i class="fa fa-map-marker-alt"></i>台北市內湖區洲子街106號</p>
+              <p><i class="fa fa-phone"></i>02-26592068</p>
+            </div>
+          </div>
+          <div class="contact-bar">
+            <a href="./brand.html">品牌總覽</a>|
+            <a href="./blog.html">部落格</a>|
+            <a href="./about.html">關於我們</a>|
+            <a href="./problems.html">常見問題</a>
+          </div>
+          <div class="icon-bar">
+            <div class="icon-item">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="icon-item">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <a
+              href="https://inline.app/order/-MNSCuB86DeW7ngZobf9:inline-live-2?language=zh-tw"
+              target="_blank"
+              style="color: #fff"
+            >
+              <div class="order-btn">立即點餐</div>
+            </a>
+          </div>
+          <span>© 無限廚房 ALL RIGHTS RESERVED</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- loader part  -->
+    <!-- <div class="loader-container">
+    <img src="images/loader.gif" alt="">
+</div> -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- partial -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <!-- custom js file link  -->
+    <script src="./js/script.js"></script>
+    <script>
+      (function ($) {
+        $(document).ready(function () {
+          var s = $(".slider"),
+            sWrapper = s.find(".slider-wrapper"),
+            sItem = s.find(".slide"),
+            btn = s.find(".slider-link"),
+            sWidth = sItem.width(),
+            sCount = sItem.length,
+            slide_date = s.find(".slide-date"),
+            slide_title = s.find(".slide-title"),
+            slide_text = s.find(".slide-text"),
+            slide_more = s.find(".slide-more"),
+            slide_image = s.find(".slide-image img"),
+            sTotalWidth = sCount * sWidth;
+
+          sWrapper.css("width", sTotalWidth);
+          sWrapper.css("width", sTotalWidth);
+
+          var clickCount = 0;
+
+          btn.on("click", function (e) {
+            e.preventDefault();
+
+            if ($(this).hasClass("next")) {
+              clickCount < sCount - 1 ? clickCount++ : (clickCount = 0);
+            } else if ($(this).hasClass("prev")) {
+              clickCount > 0 ? clickCount-- : (clickCount = sCount - 1);
+            }
+            if (window.matchMedia("(max-width: 450px)").matches) {
+              TweenMax.to(sWrapper, 0.4, {
+                x: "-" + sWidth * clickCount * 1.5,
+              });
+            } else {
+              TweenMax.to(sWrapper, 0.4, {
+                x: "-" + sWidth * clickCount * 1.15,
+              });
+            }
+            //CONTENT ANIMATIONS
+
+            var fromProperties = { autoAlpha: 0, x: "-50", y: "-10" };
+            var toProperties = { autoAlpha: 0.8, x: "0", y: "0" };
+
+            TweenLite.fromTo(
+              slide_image,
+              1,
+              { autoAlpha: 0, y: "40" },
+              { autoAlpha: 1, y: "0" }
+            );
+            TweenLite.fromTo(slide_date, 0.4, fromProperties, toProperties);
+            TweenLite.fromTo(slide_title, 0.6, fromProperties, toProperties);
+            TweenLite.fromTo(slide_text, 0.8, fromProperties, toProperties);
+            TweenLite.fromTo(slide_more, 1, fromProperties, toProperties);
+          });
+        });
+      })(jQuery);
+
+      $(".overlay").addClass("overlay-blue");
+    </script>
+  </body>
+</html>
